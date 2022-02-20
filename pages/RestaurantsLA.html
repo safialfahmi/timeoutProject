@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+<meta charset="utf-8">
+<link rel="stylesheet" href="../css/projectcss.css" >
+<script type="text/javascript" src="../js/js.js"></script>
+<title>RestaurantsLA</title>
+
+</head>
+
+<body>
+
+
+<!--shatha muslih alharbi
+438007605-->
+
+<header>
+<div class="navbar">
+  <a href="../home.html"><img src="../images/logo.png"width="30" width="30"/></a>
+  <div class="subnav">
+    <button class="subnavbtn">Hotels <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="../pages/NYC1.html">NYC</a>
+      <a href="../pages/bproject.html">LA</a>
+      
+    </div>
+  </div> 
+  <div class="subnav">
+    <button class="subnavbtn"> Restaurants<i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+
+      <a href="../pages/RestaurantsNYC.html">NYC</a>
+      <a href="../pages/RestaurantsLA.html">LA</a>
+    
+    </div>
+  </div> 
+  <div class="subnav">
+    <button class="subnavbtn">Activities<i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+     <a href="../pages/progectsafia.html">NYC</a>
+      <a href="../pages/LAB.html">LA</a>
+    </div>
+  </div>
+   <div class="subnav">
+    <button class="subnavbtn">shopping<i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+     <a href="../pages/shopping.html">NYC</a>
+      <a href="#">LA</a>
+    </div>
+  </div>
+  
+    <a href="../pages/teamwep.html">Team</a>
+</div>
+
+
+</header>
+
+
+<form id="left" method="get" action="">
+<hr/>
+<h2>  Yor are in <br/>Restaurants page </h2><br/>
+<hr/><br/>
+<h2> Meals</h2>
+<div id="formID">
+<input onclick="ChangeColor(this)"  type="checkbox" name="Meals" value="Meals"/>Breakfast<br/></div>
+<div id="formID1">
+<input onclick="ChangeColor1(this)"  type="checkbox" name="Meals" value="Meals"/> Lunch<br/></div>
+<div id="formID2">
+<input onclick="ChangeColor2(this)"  type="checkbox" name="Meals" value="Meals"/> Dinner<br/></div>
+<div id="formID3">
+<input onclick="ChangeColor3(this)"  type="checkbox" name="Meals" value="Meals"/> Coffee and Tea<br/></div><br/><br/>
+<hr/><br/>
+<h2 > Price</h2>
+<div id="formID4">
+<input onclick="ChangeColor4(this)"  type="checkbox" name="Meals" value="Meals"/> Cheap Eats<br/></div>
+<div id="formID5">
+<input onclick="ChangeColor5(this)"  type="checkbox"  name="Meals" value="Meals"/> Mid-range<br/></div>
+<div id="formID6">
+<input onclick="ChangeColor6(this)"  type="checkbox" name="Meals" value="Meals"/> Fine Dining<br/></div><br/><br/>
+<hr/><br/>
+<h2> Location</h2>
+<h5 > Neighborhoods:</h5>
+<div id="formID7">
+<input onclick="ChangeColor7(this)"  type="checkbox" name="Meals" value="Meals"/> Beverly Hills<br/></div>
+<div id="formID8">
+<input onclick="ChangeColor8(this)"  type="checkbox" name="Meals" value="Meals"/> Central L.A<br/></div>
+<div id="formID9">
+<input onclick="ChangeColor9(this)"  type="checkbox" name="Meals" value="Meals"/> Hollywood<br/></div>
+<div id="formID10">
+<input onclick="ChangeColor10(this)"  type="checkbox" name="Meals" value="Meals"/> Downtown<br/></div>
+<div id="formID11">
+<input onclick="ChangeColor11(this)"  type="checkbox" name="Meals" value="Meals"/> Century City<br/></div>
+<div id="formID12">
+<input onclick="ChangeColor12(this)"  type="checkbox" name="Meals" value="Meals"/> others<br/></div>
+<h2 >Cuisines</h2>
+<div id="formID13">
+<input onclick="ChangeColor13(this)"  type="checkbox" name="Meals" value="Meals"/>American<br/></div>
+<div id="formID14">
+<input onclick="ChangeColor14(this)"  type="checkbox" name="Meals" value="Meals"/>Italian<br/></div>
+<div id="formID15">
+<input onclick="ChangeColor15(this)"  type="checkbox" name="Meals" value="Meals"/>Asian<br/></div>
+
+<br/>
+<hr/>
+</form>
+  <div class="parallax">
+  
+  <h1 id="findtable1"> Find your table for any occasion</h1>
+<div style="height:100px;font-size:36px">
+ <form id="findtable" method="get">
+   
+   <input type="date" name="date" value="2019-03-22" size="90"/>
+     <select >
+       <option  > 6 AM </option>
+       <option  > 7 AM </option>
+       <option  > 8 AM </option>
+       <option  > 9 AM </option>
+       <option selected > 10 AM </option>
+       <option  >11 AM </option>
+       <option  > 12 PM </option>
+       <option  > 1 PM </option>
+	   <option  > 2 PM </option>
+       <option  > 3 PM </option>
+	   <option  > 4 PM </option>
+       <option  > 5 PM </option>
+	   <option  > 6 PM </option>
+       <option  > 7 PM </option>
+	   <option  > 8 PM </option>
+       <option  > 9 PM </option>
+       </select>
+       <select>
+       <option selected > 2 people </option>
+       <option  > 3 people </option>
+       <option  > 4 people </option>
+       <option  > 5 people </option>
+       <option  > 6 people </option>
+       <option  > 7 people </option>
+       <option  > 8 people </option>
+       </select>
+   <input type="text" name="findtabl" list="findtable3" size="20" onfocus="search(this)"/>
+     <datalist id="findtable3">
+       <optgroup label="meal">
+       <option>Toast Bakery Cafe</option>
+       <option>Din Tai Fung Dumpling House</option>
+       </optgroup>
+       <optgroup label="cafe">
+       <option>starbuks</option>
+       </optgroup>
+     </datalist>
+   <input type="submit" value="search" size="20" />
+    </form>
+</div></div>
+
+<div class="parallax"></div>
+
+
+
+  
+
+	 
+	  
+  <p class="customerselect1" ><br/>Your eating choices in Los Angeles City are as limitless as your cravings. Want a 15-course tasting menu at<br/> the latest trendsetting restaurant?
+ A porterhouse for two at an old-timey steakhouse? A plateful of<br/> Chinese dumplings? The City has thousands of places featuring cuisines from
+ around the world. <br/>Explore this section to find the restaurants—and meals—of your dreams.<br/><br/></p>
+ <div class="parallax"></div>
+ <p class="customerselect1">
+ <strong>Browse Los Angeles by:</strong> <br/>
+ 
+     
+    <a href="#cafe"> <img src="../images/cafe.PNG"height="250pt" width="250pt"/></a>
+	<a href="#mosticonic"> <img src="../images/most iconic.PNG"height="250pt" width="505pt"/></a><br/>
+   
+
+   
+    <a href="#breakfast">  <img src="../images/breakfast1.PNG" height="250pt" width="250pt"/></a>
+	<a href="#lunch"> <img src="../images/lunch1.PNG" height="250pt" width="250pt"/></a>
+    <a href="#dinner"> <img src="../images/dinner.PNG" height="250pt" width="250pt"/></a>
+   </p>
+   
+   
+   <div class="parallax"></div>
+<div id="restaurant">
+   <p id="breakfast"> <strong>Break fast </strong></p><hr/><br/>
+  
+  <p class="part1">
+    <img src="../images/Toast Bakery Cafe.jpg" title="Toast Bakery Cafe" alt="Toast Bakery Cafe" height="180" width="200"/>
+
+     <h2>Toast Bakery Cafe</h2>
+     <a href="https://www.tripadvisor.ca/Restaurant_Review-g32655-d350178-Reviews-Toast_Bakery_Cafe-Los_Angeles_California.html#REVIEWS">Review</a>
+     <a href="https://www.tripadvisor.ca/RestaurantsNear-g32655-d350178-Toast_Bakery_Cafe-Los_Angeles_California.html">Nearby</a><br/>
+    <br/>
+	
+     <a href="tel:+1 323-655-5018"><img src="../images/tel.png" alt="call theme" title="call theme" height="40" width="40"/></a>|
+     <a href="https://www.google.com.sa/maps/place/Toast+Bakery+Cafe/@34.07268,-118.3688347,15z/data=!4m5!3m4!1s0x0:0x6cce891c6003f4ff!8m2!3d34.07268!4d-118.3688347"><img src="../images/location.png" alt="location " title="location " height="40" width="40"/></a>|
+     <a href="http://www.toastbakerycafe.net/?utm_source=tripadvisor&utm_medium=referral"><img src="../images/website.png" alt="website " title="website " height="40" width="40"/></a>|
+     <a href="http://www.toastbakerycafe.net/menu"><img src="../images/menu.png" alt="wmenu" title="menu" height="40" width="40"/></a>|
+     
+	 <br/><br/>
+
+  <p>The TOAST BAKERY CAFE is a premier Los Angeles Culture Destination.<br/>
+  With its sleek exterior and international palette.<br/>
+  TOAST BAKERY CAFE perfectly fuses the latest in food, coffee, and spirits.</p><br/>
+	
+   <p>
+   <img src="../images/tcb1.jpg"height="300" width="300"/></a>
+	 <img src="../images/tbc2.jpg"height="300" width="300"/></a>
+	 <img src="../images/tcp.png" height="300" width="300"/></a>
+   <br/> <br/><br/><br/>
+   </p><hr/><br/>
+   </p>
+   
+ 
+  <p class="part1">
+    <img src="../images/Russell's.jpg" title="Russell's" alt="Russell's" height="180" width="200"/>
+      
+     <h2>Russell's</h2>
+     <a href="https://www.tripadvisor.com/Restaurant_Review-g32859-d585586-Reviews-Russell_s-Pasadena_California.html#REVIEWS">Review</a>
+     <a href="https://www.tripadvisor.com/RestaurantsNear-g32859-d585586-Russell_s-Pasadena_California.html">Nearby</a><br/>
+    <br/>
+	
+     <a href="tel:+1 626-578-1404"><img src="../images/tel.png" alt="call theme" title="call theme" height="40" width="40"/></a>|
+     <a href="https://www.google.com/maps/dir/''/Russell's+Food+Center+Arnaudville,+LA+70512/@30.3980507,-91.8620547,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x86248e94396c734b:0x5d0e5873a9ccf2ab!2m2!1d-91.9320949!2d30.3980694"><img src="../images/location.png" alt="location " title="location " height="40" width="40"/></a>|
+     <a href="http://www.russellsfoodcenter.com"><img src="../images/website.png" alt="website " title="website " height="40" width="40"/></a>|
+     <a href="http://www.russellsfoodcenter.com/wp-content/uploads/2018/01/russells-catering-menu.pdf"><img src="../images/menu.png" alt="wmenu" title="menu" height="40" width="40"/></a>|
+     
+	 <br/><br/>
+
+  <p>Russell’s Food Center  offers its Signature Dishes, Party Trays and Baskets.,<br/>  Meal Solutions and many creations by the Deli/Bakery Department.</p><br/><br/>
+
+   <p>
+  <img src="../images/33.png"height="300" width="300"/></a>
+	 <img src="../images/11.jpg"height="300" width="300"/></a>
+	 <img src="../images/22.png" height="300" width="300"/></a>
+   </p><br/><hr/><br/><br/>
+   
+   </p>
+   
+   
+      <p id="lunch"><strong> Lunch  </strong></p><hr/><br/>
+  
+   <p class="part1">
+    <img src="../images/Din Tai Fung 1.jpg" title="Din Tai Fung Dumpling House" alt="Din Tai Fung Dumpling House" height="200" width="200"/>
+
+     <h2>Din Tai Fung Dumpling House</h2>
+     <a href="https://www.tripadvisor.ca/Restaurant_Review-g32431-d5971579-Reviews-Din_Tai_Fung_Dumpling_House-Glendale_California.html#REVIEWS">Review</a>
+     <a href="https://www.tripadvisor.ca/RestaurantsNear-g32431-d5971579-Din_Tai_Fung_Dumpling_House-Glendale_California.html">Nearby</a><br/>
+    <br/>
+	
+     <a href="tel:+1 818-551-5561"><img src="../images/tel.png" alt="call theme" title="call theme" height="40" width="40"/></a>|
+     <a href="https://www.google.com.sa/maps/place/Din+Tai+Fung/@34.1429788,-118.2553884,15z/data=!4m2!3m1!1s0x0:0xfc500ddb3e812763?ved=2ahUKEwjk9rS94PXgAhVIKBoKHdqdDrMQ_BIwCnoECAYQCA"><img src="../images/location.png" alt="location " title="location " height="40" width="40"/></a>|
+     <a href="https://dintaifungusa.com/"><img src="../images/website.png" alt="website " title="website " height="40" width="40"/></a>|
+     <a href="https://dintaifungusa.com/menu/appetizers/"><img src="../images/menu.png" alt="menu" title="menu" height="40" width="40"/></a>|
+	 <br/><br/>
+
+  <p>Originally founded as a cooking oil retail business in 1958,<br/>   Din Tai Fung was reborn as a steamed dumpling and noodle restaurant in 1972. 
+	Today, Din Tai Fung has branches in Japan, the United States, South Korea, Singapore, China,and Thailand
+	Din Tai Fung gives people throughout the world the opportunity to experience a classic “taste of Taiwan.”</p><br/>
+	
+  
+  <p>
+    <img src="../images/1.png"height="300" width="300"/></a>
+	 <img src="../images/2.png"height="300" width="300"/></a>
+	 <img src="../images/3.png" height="300" width="300"/></a>
+  </p><br/><hr/><br/><br/>
+   </p>
+  
+   <p id="dinner"><strong> Dinner </strong></p><hr/><br/>
+ <p class="part1">
+    <img src="../images/Umami Burger.jpg" title="Umami Burger" alt="Umami Burger" height="170" width="200"/>
+
+     <h2>Umami Burger</h2>
+     <a href="https://www.tripadvisor.ca/Restaurant_Review-g32655-d1453257-Reviews-Umami_Burger-Los_Angeles_California.html#REVIEWS">Review</a>
+     <a href="https://www.google.com.sa/maps/place/1520+N+Cahuenga+Blvd,+Los+Angeles,+CA+90028%D8%8C+%D8%A7%D9%84%D9%88%D9%84%D8%A7%D9%8A%D8%A7%D8%AA+%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%A9%E2%80%AD/data=!4m2!3m1!1s0x80c2bf3a18fedc3d:0x532e92962d47cf0f?ved=2ahUKEwjdk4uS5vXgAhUy2OAKHRaPDdQQ8gEwAHoECAAQAQ">Nearby</a><br/>
+    <br/>
+	
+     <a href="tel:+1 323-469-3100 "><img src="../images/tel.png" alt="call theme" title="call theme" height="40" width="40"/></a>|
+     <a href="https://www.google.com.sa/maps/place/1520+N+Cahuenga+Blvd,+Los+Angeles,+CA+90028%D8%8C+%D8%A7%D9%84%D9%88%D9%84%D8%A7%D9%8A%D8%A7%D8%AA+%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%A9%E2%80%AD/data=!4m2!3m1!1s0x80c2bf3a18fedc3d:0x532e92962d47cf0f?ved=2ahUKEwjdk4uS5vXgAhUy2OAKHRaPDdQQ8gEwAHoECAAQAQ"><img src="../images/location.png" alt="location " title="location " height="40" width="40"/></a>|
+     <a href="http://www.umamiburger.com/locations/hollywood/?utm_source=tripadvisor&utm_medium=referral"><img src="../images/website.png" alt="website " title="website " height="40" width="40"/></a>|
+     <a href="https://www.umamiburger.com/menu/"><img src="../images/menu.png" alt="wmenu" title="menu" height="40" width="40"/></a>|
+     
+	 <br/><br/>
+
+  <p> Umami Burger it is  about amplifying your taste buds by dropping some serious umami flavor bombs into our food<br/></p><br/>
+   
+  <p>
+    <img src="../images/1.jpg"height="300" width="300"/></a>
+	 <img src="../images/2.jpg"height="300" width="300"/></a>
+	 <img src="../images/3.jpg" height="300" width="300"/></a>
+  </p><br/><hr/><br/><br/>
+   </p>
+   
+   
+   <p id="cafe"><strong> cafes </strong></p><hr/><br/>
+ <p class="part1">
+    <img src="../images/Alfred Coffee Melrose Place.jpg" title="Alfred Coffee Melrose Place" alt="Alfred Coffee Melrose Place" height="170" width="200"/><br/>
+
+     <h2>Alfred Coffee Melrose Place</h2>
+     <a href="https://www.tripadvisor.com/Restaurant_Review-g32655-d4826740-Reviews-Alfred_Coffee_Melrose_Place-Los_Angeles_California.html#REVIEWS">Review</a>
+     <a href="https://www.google.com.sa/maps/place/Melrose+Pl,+Los+Angeles,+CA+90069%D8%8C+%D8%A7%D9%84%D9%88%D9%84%D8%A7%D9%8A%D8%A7%D8%AA+%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%A9%E2%80%AD/@34.0836197,-118.3731104,17z/data=!3m1!4b1!4m5!3m4!1s0x80c2beb6e64cb3d3:0x5ed88d41487fd6bc!8m2!3d34.0836197!4d-118.3752991">Nearby</a><br/>
+    <br/>
+	
+     <a href="tel:+1 323-944-0811 "><img src="../images/tel.png" alt="call theme" title="call theme" height="40" width="40"/></a>|
+     <a href="https://www.google.com.sa/maps/place/Melrose+Pl,+Los+Angeles,+CA+90069%D8%8C+%D8%A7%D9%84%D9%88%D9%84%D8%A7%D9%8A%D8%A7%D8%AA+%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%A9%E2%80%AD/@34.0836197,-118.3731104,17z/data=!3m1!4b1!4m5!3m4!1s0x80c2beb6e64cb3d3:0x5ed88d41487fd6bc!8m2!3d34.0836197!4d-118.3752991"><img src="../images/location.png" alt="location " title="location " height="40" width="40"/></a>|
+     <a href="http://www.alfred.la/?utm_source=tripadvisor&utm_medium=referral"><img src="../images/website.png" alt="website " title="website " height="40" width="40"/></a>|
+     <a href="https://alfred.la/collections/all"><img src="../images/menu.png" alt="wmenu" title="menu" height="40" width="40"/></a>|
+     
+	 <br/><br/>
+
+  <p> We are looking for experienced cafe leaders who love hospitality; someone who is dedicated to their community and their love for coffee! 
+  </p><br/>
+   
+  <p>
+    <img src="../images/acmp.jpg"height="300" width="300"/></a>
+	 <img src="../images/acmp2.jpg"height="300" width="300"/></a>
+	 <img src="../images/My_Little_Cosmo_Alfred_Coffee.jpg" height="300" width="300"/></a>
+ </p> <br/><hr/><br/><br/>
+   </p>
+   
+   
+  <p id="mosticonic"><strong>Most Iconic Los Angeles Restaurants</strong></p><br/><hr/>
+  
+   <nav>
+   <ol>
+    <li><h2>Cole's Restaurant</h2></li>
+   <img src="../images/1most.jpg" title="Cole's Restaurant " alt=" Cole's Restaurant" height="250" width="250"/>
+  <p> Cole's is the oldest restaurant in LA in its original location, but not under the same owners.</br> It went from an old-timer rendezvous to a hipster hangout 
+  after a takeover and makeover by 213 Nightlife group that operates a dozen Downtown LA establishments. The dinner menu is true to its roots, but the two bars,
+  including the backroom Varnish, add appeal for the younger crowd.</br> Cole's claims to be the originator of the original French Dip sandwich, but so does LA's
+  next historic restaurant. 
+   </p><br/><hr/>
+   
+   <li><h2> Philippe the Original (1908)</h2></li>
+   <img src="../images/Philippe the Original (1908).jpg" title="Philippe the Original (1908) " alt=" Philippe the Original (1908)" height="230" width="250"/>
+  <p> Philippe's also opened in 1908, but at a different location. It was forced to move in 1951 to make room for the 101 freeway. </br>Its current location is across from Union Station at the edge of Chinatown.
+  Phillipe's also laid claim to creating the first French Dip sandwich, and in a KCET poll,</br>
+  Philippe's French Dip won out over Coles as being the most "iconic" LA dish, and won out over most other Los Angeles foods for LA icon status, with the exception of the strawberry donut from the Donut Man, which was voted most iconic.
+  </p><br/><hr/>
+  
+   
+  <li><h2>  Musso & Frank Grill (1919)</h2></li>
+   <img src="../images/Musso & Frank Grill (1919).jpg" title="Musso & Frank Grill (1919) " alt=" Musso & Frank Grill (1919)" height="210" width="250"/>
+  <p> Musso & Frank has been a Hollywood staple since 1919 and plenty of history has been quietly made in its dark booths.
+<br/>  Some of the wait staff seem to have been around about as long at the restaurant. 
+  The menu has been around forever too and has lots of stodgy favorites from the early 20th century. A seat at the counter is my favorite spot to feel part of history.
+  </p><br/><br/><br/><hr/>
+  
+  <li><h2> Pink's Hot Dogs (1939)</h2></li>
+   <img src="../images/Pink's Hot Dogs (1939).jpg" title="Pink's Hot Dogs (1939)" alt=" Pink's Hot Dogs (1939)" height="220" width="250"/>
+  <p>Paul Pink started selling 10 cent chili dogs from a cart in a field at the corner of La Brea and Melrose in Hollywood 1939. In 1946,  <br/>
+  he built a small building on the same corner, which is now Pink's Hot Dogs. You'll still find people - including the occasional star rolling up in a limo - 
+   <br/>They also serve some insane burger concoctions and tortilla-wrapped burrito dogs. For your sweet tooth, there's cake by the slice. 
+  </p><br/>
+  
+  
+   </ol>
+  </nav>
+   
+</div>
+
+<footer>
+
+<a href="#"><img src="../images/twitter.png" width="30" height="30"/></a>
+<a href="#"><img src="../images/insta.png" width="30" height="30"/></a>
+<a href="#"><img src="../images/whatsapp.png" width="30" height="30"/></a>
+<a href="#"><img src="../images/youtube.png" width="30" height="30"/></a>
+<a id ="up_header" href="#"><img src="../images/up.png" width="30" height="30"/></a>
+</footer>
+</body>
+</html>

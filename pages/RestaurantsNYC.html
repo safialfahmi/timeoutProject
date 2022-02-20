@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+<meta charset="utf-8">
+<link rel="stylesheet" href="../css/projectcss.css" >
+<script type="text/javascript" src="../js/js.js"></script>
+<title>RestaurantsNYC</title>
+
+</head>
+<body>
+
+
+
+
+
+<header>
+<div class="navbar">
+  <a href="../home.html"><img src="../images/logo.png"width="30" width="30"/></a>
+  <div class="subnav">
+    <button class="subnavbtn">Hotels <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="../pages/NYC1.html">NYC</a>
+      <a href="../pages/bproject.html">LA</a>
+      
+    </div>
+  </div> 
+  <div class="subnav">
+    <button class="subnavbtn"> Restaurants<i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+
+      <a href="../pages/RestaurantsNYC.html">NYC</a>
+      <a href="../pages/RestaurantsLA.html">LA</a>
+    
+    </div>
+  </div> 
+  <div class="subnav">
+    <button class="subnavbtn">Activities<i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+     <a href="../pages/progectsafia.html">NYC</a>
+      <a href="../pages/LAB.html">LA</a>
+    </div>
+  </div>
+   <div class="subnav">
+    <button class="subnavbtn">shopping<i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+     <a href="../pages/shopping.html">NYC</a>
+      <a href="#">LA</a>
+    </div>
+  </div>
+  
+  <a href="#">Team</a>
+</div>
+
+
+</header>
+<form id="left" method="get" action="">
+<hr/>
+<h2>  Yor are in <br/>Restaurants page </h2><br/>
+<hr/><br/>
+<h2> Meals</h2>
+<div id="formID">
+<input onclick="ChangeColor(this)"  type="checkbox" name="Meals" value="Meals"/>Breakfast<br/></div>
+<div id="formID1">
+<input onclick="ChangeColor1(this)"  type="checkbox" name="Meals" value="Meals"/> Lunch<br/></div>
+<div id="formID2">
+<input onclick="ChangeColor2(this)"  type="checkbox" name="Meals" value="Meals"/> Dinner<br/></div>
+<div id="formID3">
+<input onclick="ChangeColor3(this)"  type="checkbox" name="Meals" value="Meals"/> Coffee and Tea<br/></div><br/><br/>
+<hr/><br/>
+<h2 > Price</h2>
+<div id="formID4">
+<input onclick="ChangeColor4(this)"  type="checkbox" name="Meals" value="Meals"/> Cheap Eats<br/></div>
+<div id="formID5">
+<input onclick="ChangeColor5(this)"  type="checkbox"  name="Meals" value="Meals"/> Mid-range<br/></div>
+<div id="formID6">
+<input onclick="ChangeColor6(this)"  type="checkbox" name="Meals" value="Meals"/> Fine Dining<br/></div><br/><br/>
+<hr/><br/>
+<h2> Location</h2>
+<h5 > Neighborhoods:</h5>
+<div id="formID7">
+<input onclick="ChangeColor7(this)"  type="checkbox" name="Meals" value="Meals"/> Beverly Hills<br/></div>
+<div id="formID8">
+<input onclick="ChangeColor8(this)"  type="checkbox" name="Meals" value="Meals"/> Central L.A<br/></div>
+<div id="formID9">
+<input onclick="ChangeColor9(this)"  type="checkbox" name="Meals" value="Meals"/> Hollywood<br/></div>
+<div id="formID10">
+<input onclick="ChangeColor10(this)"  type="checkbox" name="Meals" value="Meals"/> Downtown<br/></div>
+<div id="formID11">
+<input onclick="ChangeColor11(this)"  type="checkbox" name="Meals" value="Meals"/> Century City<br/></div>
+<div id="formID12">
+<input onclick="ChangeColor12(this)"  type="checkbox" name="Meals" value="Meals"/> others<br/></div>
+<h2 >Cuisines</h2>
+<div id="formID13">
+<input onclick="ChangeColor13(this)"  type="checkbox" name="Meals" value="Meals"/>American<br/></div>
+<div id="formID14">
+<input onclick="ChangeColor14(this)"  type="checkbox" name="Meals" value="Meals"/>Italian<br/></div>
+<div id="formID15">
+<input onclick="ChangeColor15(this)"  type="checkbox" name="Meals" value="Meals"/>Asian<br/></div>
+
+<br/>
+<hr/>
+</form>
+  <div class="parallax1">
+  <h1 id="findtable1"> Find your table for any occasion</h1>
+  <div style="height:100px;font-size:36px">
+   <form id="findtable"  method="get">
+   
+   <input type="date" name="date" value="2019-07-22" size="90"/>
+     <select >
+       <option  > 6 AM </option>
+       <option  > 7 AM </option>
+       <option  > 8 AM </option>
+       <option  > 9 AM </option>
+       <option selected > 10 AM </option>
+       <option  >11 AM </option>
+       <option  > 12 PM </option>
+       <option  > 1 PM </option>
+	   <option  > 2 PM </option>
+       <option  > 3 PM </option>
+	   <option  > 4 PM </option>
+       <option  > 5 PM </option>
+	   <option  > 6 PM </option>
+       <option  > 7 PM </option>
+	   <option  > 8 PM </option>
+       <option  > 9 PM </option>
+       </select>
+       <select>
+       <option selected > 2 people </option>
+       <option  > 3 people </option>
+       <option  > 4 people </option>
+       <option  > 5 people </option>
+       <option  > 6 people </option>
+       <option  > 7 people </option>
+       <option  > 8 people </option>
+       </select>
+   <input type="text" name="findtabl" list="findtable3" size="20"onfocus="search(this)"/>
+     <datalist id="findtable3">
+       <optgroup label="Breakfast">
+       <option>Cosi</option>
+       <option>Gemma</option>
+	   <option>Broadway Bagel</option>
+       <option>Tsion Cafe</option>
+       </optgroup>
+	   <optgroup label="Lunch">
+       <option>Akdenizi</option>
+       <option>Balthazar</option>
+	   <option>Excellent Dumpling House</option>
+       <option>  Le CouCou Restaurant</option>
+       </optgroup>
+	   <optgroup label="Dinner">
+       <option>By Suzette</option>
+       <option>Brushstroke</option>
+	   <option>Felice 15 Gold Street</option>
+       <option>Koi Restaurant</option>
+       </optgroup>
+       <optgroup label="Cafe">
+       <option>Starbuks</option>
+       <option>Fluffy's Cafe & Pizzeriai</option>
+       <option>Fairway Cafe</option> 
+	   <option>Cafe Sabarsky</option> 
+       </optgroup>
+	   <optgroup label="Deserts & Bakery">
+       <option>Two Little Red Hens</option>
+	   <option>Levain Bakery</option>
+	   <option>Molly's Cupcakes</option>
+       <option>Sweet Revenge</option>
+       </optgroup>
+     </datalist>
+   <input type="submit" value="search" size="20" />
+    </form>
+	</div></div>
+
+<div class="parallax1"></div>
+	
+	
+	  
+  <p class="customerselect1" ><br/>Your eating choices in New York City are as limitless as your cravings. Want a 15-course tasting<br/>
+	   menu at the latesttrendsetting restaurant? A porterhouse for two at an old-timey steakhouse?<br/>
+	   A plateful of Chinese dumplings? The City has thousands of places featuring cuisines from around<br/>
+	   the world. Explore this section to find the restaurants—and meals—of your dreams..<br/><br/></p>
+	   <div class="parallax1"></div>
+  <p class="customerselect1">
+	   <strong>Browse New York City by:</strong> <br/>
+   
+    <a href="#Cafe"> <img src="../images/1_700x.jpg" height="250pt" width="250pt"/></a>
+	<a href="#Deserts & Bakery"> <img src="../images/2015-1107+-+Pumpkin+Pies_0174.jpg" height="250pt" width="505pt"/></a><br/>
+   
+
+   
+    <a href="#breakfast">  <img src="../images/7562ab71-9093-41e3-9534-6509501370ad--2018-0309_wholeflour-breakfast-cookie_3x2_rocky-luten_033.jpg" height="250pt" width="250pt"/></a>
+	<a href="#lunch"> <img src="../images/e11bc7f08195f80214daef004f922b55.jpg" height="250pt" width="250pt"/></a>
+    <a href="#dinner"> <img src="../images/589dea2e769562.76756712.jpg" height="250pt" width="250pt"/></a>
+   </p>
+   <div class="parallax1"></div>
+   
+   
+<div id="restaurant">
+   <p id="breakfast"> <strong>Break fast </strong></p><hr/>
+  
+  <p class="part1">
+    <img src="../images/a85dc01bba9c221c24118d297e54316c.jpg" title="Cosi" alt="Cosi" height="190" width="200"/>
+
+     <h2>Cosi</h2>
+     <a href="https://www.tripadvisor.ca/Restaurant_Review-g60763-d424646-Reviews-Cosi-New_York_City_New_York.html#REVIEWS">Review</a>
+     <a href="https://www.tripadvisor.ca/Restaurant_Review-g60763-d424646-Reviews-Cosi-New_York_City_New_York.html#MAPVIEW">Nearby</a><br/>
+    <br/>
+	
+     <a href="tel:+1 212-947-1005"><img src="../images/tel.png" alt="call theme" title="call theme" height="40" width="40"/></a>|
+     <a href="https://www.google.com/maps/place/Cosi/@40.761269,-73.9700804,17z/data=!3m1!4b1!4m5!3m4!1s0x89c258fad972ed23:0xcdb79ba57fa5b742!8m2!3d40.761269!4d-73.9722691"><img src="../images/location.png" alt="location " title="location " height="40" width="40"/></a>|
+     <a href="https://www.getcosi.com/"><img src="../images/website.png" alt="website " title="website " height="40" width="40"/></a>|
+     <a href="https://orders.getcosi.com/index.cfm?fuseaction=order&action=menu-categories&channel-id=1/"><img src="../images/menu.png" alt="wmenu" title="menu" height="40" width="40"/></a>|
+     
+	 <br/><br/>
+
+  <p>Cosi catered the morning portion of our all day meetings. Pastries, bagels, and coffee delivered on time. Everything was<br/>
+  delicious and a wonderful cup of coffee. <br/></p><br/>
+	
+   <p>
+     <img src="../images/Cosi.0.0.jpg"height="280" width="300"/></a>
+	 <img src="../images/1e14166b18061db5e4da3cfc6660e29b_small.jpg"height="280" width="300"/></a>
+	 <img src="../images/Sandwich Buffet.jpg" height="280" width="300"/></a>
+   <br/> <br/><br/><br/>
+   </p><hr/><br/>
+   </p>
+   
+ 
+  <p class="part1">
+    <img src="../images/344DAF6C00000578-3595334-image-a-4_1463942371772.jpg" title="Gemma" alt="Gemma" height="190" width="200"/>
+      
+     <h2>Gemma</h2>
+     <a href="https://www.tripadvisor.ca/Restaurant_Review-g60763-d816875-Reviews-Gemma-New_York_City_New_York.html#REVIEWS">Review</a>
+    <a href="https://www.tripadvisor.ca/Restaurant_Review-g60763-d816875-Reviews-Gemma-New_York_City_New_York.html#MAPVIEW">Nearby</a><br/>
+    <br/>
+	
+     <a href="tel:+1 212-505-9100"><img src="../images/tel.png" alt="call theme" title="call theme" height="40" width="40"/></a>|
+    <a href="https://www.google.com/maps/place/Gemma/@40.7262202,-73.9894064,17z/data=!3m1!4b1!4m5!3m4!1s0x89c25984d9cd5c33:0xa401c24a11b098a9!8m2!3d40.7262202!4d-73.9915951"><img src="../images/location.png" alt="location " title="location " height="40" width="40"/></a>|
+    <a href="https://www.theboweryhotel.com/"><img src="../images/website.png" alt="website " title="website " height="40" width="40"/></a>|
+    <a href="https://dywevhq93ayvw.cloudfront.net/app/uploads/2018/11/26181242/Breakfast-Fall-2017.pdf/"><img src="../images/menu.png" alt="menu" title="menu" height="40" width="40"/></a>|
+     
+	 <br/><br/>
+
+  <p>Gemma is an Italian Trattoria located on the ground floor of The Bowery Hotel. Chef Carlo Bigi pairs rustic, seasonal cuisine with an <br/>
+   extensive Italian wine list in an ambient setting.<br/></p><br/>
+
+   <p>
+     <img src="../images/Gemma_0.jpg" height="280" width="300"/></a>
+   <img src="../images/16111_BH_BakedEggs_003-1024x819.jpg" height="280" width="300"/></a>
+   <img src="../images/every-great-sunday-begins.jpg" height="280" width="300"/></a>
+  </p> <br/><hr/><br/><br/>
+   </p>
+   
+   <p class="part1">
+    <img src="../images/Moe-s-Broadway-Bagel-logo.jpg" title="Broadway Bagel" alt="Broadway Bagel" height="140" width="200"/>
+      
+     <h2>Broadway Bagel</h2>
+     <a href="https://www.tripadvisor.ca/Restaurant_Review-g60763-d3948791-Reviews-Broadway_Bagel-New_York_City_New_York.html#REVIEWS">Review</a>
+    <a href="https://www.tripadvisor.ca/Restaurant_Review-g60763-d3948791-Reviews-Broadway_Bagel-New_York_City_New_York.html#MAPVIEW">Nearby</a><br/>
+    <br/>
+	
+   <a href="tel:+1 212-662-0231"><img src="../images/tel.png" alt="call theme" title="call theme" height="40" width="40"/></a>|
+    <a href="https://www.google.com/maps/place/Broadway+Bagel/@40.7976741,-73.9671328,17z/data=!3m1!4b1!4m5!3m4!1s0x89c2f625d8d662a5:0x2aa2c9c54e15d4fe!8m2!3d40.7976741!4d-73.9693215"><img src="../images/location.png" alt="location " title="location " height="40" width="40"/></a>|
+    <a href="http://ww1.broadwaybagel101ny.com/"><img src="../images/website.png" alt="website " title="website " height="40" width="40"/></a>|
+    <a href="https://www.tripadvisor.ca/Restaurant_Review-g60763-d3948791-Reviews-Broadway_Bagel-New_York_City_New_York.html/"><img src="../images/menu.png" alt="menu" title="menu" height="40" width="40"/></a>|
+	 <br/><br/>
+
+  <p>Corner storefront offering hand-rolled bagels, pancakes & specialty sandwiches morning to night.<br/></p><br/>
+   <p>
+     <img src="../images/Bagel_KCooper_303_001-768x512.jpg" height="280" width="300"/></a>
+   <img src="../images/img_2252.jpg" height="280" width="300"/></a>
+   <img src="../images/caption.jpg" height="280" width="300"/></a>
+  </p> <br/><hr/><br/><br/>
+   </p>
+   
+   
+   <p id="lunch"><strong> Lunch  </strong></p><hr/><br/>
+  
+   <p class="part1">
+    <img src="../images/Facebook-balthazar-restaurant-nyc-keith-mcnally-anniversary.jpg" title="Balthazar" alt="Balthazar" height="220" width="200"/>
+
+     <h2>Balthazar</h2>
+     <a href="https://www.tripadvisor.ca/Restaurant_Review-g60763-d423353-Reviews-Balthazar-New_York_City_New_York.html#REVIEWS">Review</a>
+    <a href="https://www.tripadvisor.ca/Restaurant_Review-g60763-d423353-Reviews-Balthazar-New_York_City_New_York.html#MAPVIEW">Nearby</a><br/>
+    <br/>
+	
+    <a href="tel:+1 212-965-1414"><img src="../images/tel.png" alt="call theme" title="call theme" height="40" width="40"/></a>|
+    <a href="https://www.google.com/maps/place/Balthazar/@40.7226041,-73.9960348,17z/data=!3m1!4b1!4m5!3m4!1s0x89c259892cccb7b7:0xbf8343b3f54c1b09!8m2!3d40.7226041!4d-73.9982235"><img src="../images/location.png" alt="location " title="location " height="40" width="40"/></a>|
+    <a href="https://balthazarny.com"><img src="../images/website.png" alt="website " title="website " height="40" width="40"/></a>|
+    <a href="https://balthazarny.com/menus/"><img src="../images/menu.png" alt="menu" title="menu" height="40" width="40"/></a>|
+	 <br/><br/>
+
+  <p>Balthazar opened in SoHo in the spring of 1997. The bustling, romantic brasserie serves traditional French fare from breakfast through supper<br/> every day, with brunch served on weekends.
+Balthazar offers a wide selection of fresh seafood and shellfish, as well as bread and pastries that are baked fresh every day at Balthazar Bakery.<br/>
+Balthazar London opened in Covent Garden in 2012.
+MICHELIN guide Recommended .<br/></p><br/>
+	
+  
+  <p>
+    <img src="../images/1760a32ebc641b1e1192b24ddf82fd30.jpg" height="280" width="300"/></a>
+   <img src="../images/ls.jpg" height="280" width="300"/></a>
+   <img src="../images/o.jpg" height="280" width="300"/></a>
+ </p> <br/><hr/><br/><br/>
+   </p>
+  
+     <p class="part1">
+    <img img src="../images/Steamed+Crab+meat+&+Pork+Xiao+Long+Bao.jpg" title="Excellent Dumpling House" alt="Excellent Dumpling House" height="210" width="200"/>
+
+      <h2>Excellent Dumpling House</h2>
+      <a href="https://www.tripadvisor.ca/Restaurant_Review-g60763-d478995-Reviews-Excellent_Dumpling_House-New_York_City_New_York.html#REVIEWS">Review</a>
+    <a href="https://www.tripadvisor.ca/Restaurant_Review-g60763-d478995-Reviews-Excellent_Dumpling_House-New_York_City_New_York.html#MAPVIEW">Nearby</a><br/>
+    <br/>
+	
+   <a href="tel:+1 212-989-8885"><img src="../images/tel.png" alt="call theme" title="call theme" height="40" width="40"/></a>|
+    <a href="https://www.google.com/maps/search/Excellent+Dumpling+House,+New+York,+NY,+USA/@40.7310742,-73.9802782,14z/data=!3m1!4b1"><img src="../images/location.png" alt="location " title="location " height="40" width="40"/></a>|
+    <a href="https://excellentdumplinghouseny.com/"><img src="../images/website.png" alt="website " title="website " height="40" width="40"/></a>|
+    <a href="https://excellentdumplinghouseny.com/menu"><img src="../images/menu.png" alt="menu" title="menu" height="40" width="40"/></a>|
+	 <br/><br/>
+
+  <p>Established in 1983 For 34 years, Excellent Dumpling House has served delicious soup dumplings (xiaolong bao) and dim sum in Canal Street,<br/>
+ Chinatown.Today, we are proud to bring the authentic taste of Chinatown to Chelsea.Meet the business owner.<br/></p><br/>
+	
+  
+  <p>
+    <img src="../images/ls3.jpg" height="280" width="300"></a>
+   <img src="../images/29446077277_304577d628_b.jpg" height="280" width="300"/></a>
+   <img src="../images/excellent-dumpling-house.jpg" height="280" width="300"/></a>
+  </p><br/><hr/><br/><br/>
+   </p>
+   
+   
+   <p class="part1">
+    <img src="../images/00063930_m.jpg" title="Le CouCou Restaurant" alt="Le CouCou Restaurant" height="210" width="200"/>
+    <h2>Le CouCou Restaurant</h2>
+    <a href="https://www.tripadvisor.ca/Restaurant_Review-g60763-d10471816-Reviews-Le_CouCou_Restaurant-New_York_City_New_York.html#REVIEWS">Review</a>
+    <a href="https://www.tripadvisor.ca/Restaurant_Review-g60763-d10471816-Reviews-Le_CouCou_Restaurant-New_York_City_New_York.html#MAPVIEW">Nearby</a><br/>
+    <br/>
+	
+   <a href="tel:+1 212-271-4252"><img src="../images/tel.png" alt="call theme" title="call theme" height="40" width="40"/></a>|
+    <a href="https://www.google.com/maps/place/Le+Coucou/@40.719139,-73.9980613,17z/data=!4m5!3m4!1s0x89c25989f3630ecb:0xd048cf49523f429d!8m2!3d40.719139!4d-74.00025"><img src="../images/location.png" alt="location " title="location " height="40" width="40"/></a>|
+    <a href="https://lecoucou.com"><img src="../images/website.png" alt="website " title="website " height="40" width="40"/></a>|
+    <a href="https://lecoucou.com/menus/lunch/"><img src="../images/menu.png" alt="menu" title="menu" height="40" width="40"/></a>|
+	 <br/><br/>
+
+  <p>fter taking Paris by storm, internationally acclaimed chef Daniel Rose returns home with Le Coucou. A gracious modern nod to<br/>
+   fine European gastronomy, Rose shrinks the intercontinental divide separating the City of Light and the Big Apple, proving that <br/>
+   the true essence of fine French dining can thrive in any time zone.<br/></p><br/>
+	
+  
+  <p>
+    <img src="../images/laurie-satran-le-coucou-pa-breakfast-1700.jpg" height="280" width="300"/></a>
+   <img src="../images/20160616-Le_Coucou-11.0.0.jpg" height="280" width="300"/></a>
+   <img src="../images/original-12050856ce7576d6b9a0c45ead127863.jpg" height="280" width="300"/></a>
+ </p> <br/><hr/><br/><br/>
+   </p>
+   
+   <p id="#dinner"><strong> Dinner </strong></p><hr/><br/>
+ <p class="part1">
+    <img src="../images/ls.jpg" title="Brushstroke" alt="Brushstroke" height="200" width="200"/>
+    <h2>Brushstroke</h2>
+    <a href="https://www.tripadvisor.ca/Restaurant_Review-g60763-d2256318-Reviews-Brushstroke-New_York_City_New_York.html#REVIEWS">Review</a>
+    <a href="https://www.tripadvisor.ca/Restaurant_Review-g60763-d816875-Reviews-Gemma-New_York_City_New_York.html#MAPVIEW">Nearby</a><br/>
+	<br/>
+	
+     <a href="tel:+1 212-791-3771"><img src="../images/tel.png" alt="call theme" title="call theme" height="40" width="40"/></a>|
+    <a href="https://www.google.com/maps/place/Brushstroke/@40.7167536,-74.0068116,17z/data=!3m1!4b1!4m5!3m4!1s0x89c25a1faa1b177d:0x2835085ab80b3b1d!8m2!3d40.7167536!4d-74.0090003"><img src="../images/location.png" alt="location " title="location " height="40" width="40"/></a>|
+    <a href="https://brushstrokenyc.com/"><img src="../images/website.png" alt="website " title="website " height="40" width="40"/></a>|
+    <a href="hhttps://www.tripadvisor.ca/Restaurant_Review-g60763-d2256318-Reviews-Brushstroke-New_York_City_New_York.html"><img src="../images/menu.png" alt="menu" title="menu" height="40" width="40"/></a>|
+    
+	 <br/><br/>
+
+  <p> GA collaborative effort of Chef Isao Yamada and Japan’s Tsuji Culinary Institute, Brushstroke presents an inspired modern adaptation of<br/>
+  wide range of Japanese cuisine, from delicate use of vegetables to sashimi, rice and wagyu. Options include the chef’s artisanal kaiseki <br/>
+   
+</p><br/>
+   
+  <p>
+    <img src="../images/BrushStroke-Restaurant-NYC-9.jpg" height="280" width="300"/></a>
+   <img src="../images/brush-stroke-1280.jpg" height="280" width="300"/></a>
+   <img src="../images/brushstroke.jpg" height="280" width="300"/></a>
+</p>  <br/><hr/><br/><br/>
+   </p>
+   
+   
+    <p class="part1">
+    <img src="../images/Houston___Suzuki__Sea_Bas-Koi_Restaurant-20000000008236600-500x375.jpg" title="Koi Restaurant" alt="Koi Restaurant" height="200" width="200"/>
+    <h2>Koi Restaurant</h2>
+    <a href="https://www.tripadvisor.ca/Restaurant_Review-g60763-d4038802-Reviews-Koi_Restaurant-New_York_City_New_York.html#REVIEWS">Review</a>
+    <a href="https://www.tripadvisor.ca/Restaurant_Review-g60763-d4038802-Reviews-Koi_Restaurant-New_York_City_New_York.html#MAPVIEW">Nearby</a><br/>
+	<br/>
+    <a href="tel:+1 212-842-4550"><img src="../images/tel.png" alt="call theme" title="call theme" height="40" width="40"/></a>|
+    <a href="https://www.google.com/maps/place/Koi/@40.7528962,-73.9815875,17z/data=!3m1!4b1!4m5!3m4!1s0x89c259aa8642b8cf:0xc0f21b5e8e75d249!8m2!3d40.7528962!4d-73.9837762"><img src="../images/location.png" alt="location " title="location " height="40" width="40"/></a>|
+    <a href="http://koirestaurant.com/wp-koi/"><img src="../images/website.png" alt="website " title="website " height="40" width="40"/></a>|
+    <a href="http://koirestaurant.com/new-york"><img src="../images/menu.png" alt="wmenu" title="menu" height="40" width="40"/></a>|
+  
+	 <br/><br/>
+
+  <p> As long time residents of Harlem, we wanted to bring something fresh, healthy, delicious to the taste buds and supportive the artistic talent<br/>
+   that is near and far. We are committed to honoring that heritage by providing a space for regular arts events, including live music, poetry <br/>
+   nights, film screenings, a writers series – and more. Tsion Cafe is that place and hope you enjoy.<br/>
+</p><br/>
+   
+  <p>
+    <img src="../images/koi.jpg" height="280" width="300"/></a>
+   <img src="../images/348s.jpg" height="280" width="300"/></a>
+   <img src="../images/Planet-Hollywood-Koi-crispy-rice-with-spicy-tuna-01.jpg" height="280" width="300"/></a>
+  </p><br/><hr/><br/><br/>
+   </p>
+   
+   <p class="part1">
+    <img src="../images/thumb_600.jpg" title="5 Napkin Burger" alt="5 Napkin Burger" height="200" width="200"/>
+    <h2>5 Napkin Burger</h2>
+    <a href="https://www.tripadvisor.com/Restaurant_Review-g60763-d4737024-Reviews-5_Napkin_Burger-New_York_City_New_York.html#REVIEWS">Review</a>
+    <a href="https://www.tripadvisor.com/Restaurant_Review-g60763-d4737024-Reviews-5_Napkin_Burger-New_York_City_New_York.html#MAPVIEW">Nearby</a><br/>
+	<br/>
+    <a href="tel:+1 212-757-2277"><img src="../images/tel.png" alt="call theme" title="call theme" height="40" width="40"/></a>|
+    <a href="https://www.google.com.sa/maps/place/5+Napkin+Burger/@40.7601707,-74.0103676,13z/data=!4m8!1m2!2m1!1s5+Napkin+Burger,nyc!3m4!1s0x89c25853c802cab1:0xca330dfa7c04c10c!8m2!3d40.76018!4d-73.9910951?hl=en"><img src="../images/location.png" alt="location " title="location " height="40" width="40"/></a>|
+    <a href="https://5napkinburger.com"><img src="../images/website.png" alt="website " title="website " height="40" width="40"/></a>|
+    <a href="https://5napkinburger.com/menus/"><img src="../images/menu.png" alt="wmenu" title="menu" height="40" width="40"/></a>|
+  
+	 <br/><br/>
+
+  <p> We had the burger – the original 5 Napkin Burger – 10oz of 100% all natural Angus chuck from Aspen Ridge, griddled to desired temperature,<br/>
+  topped with gruyere cheese, caramelized onions and rosemary aioli on a soft white potato roll. This is the burger, Chef Andy’s burger<br/>. 
+</p><br/>
+   
+  <p>
+    <img src="../images/photo0jpg.jpg" height="280" width="300"/></a>
+   <img src="../images/UWS-location-page-resize.2e16d0ba.fill-600x600-c100.jpg" height="280" width="300"/></a>
+   <img src="../images/5-napkin-2.jpg" height="280" width="300"/></a>
+ </p> <br/><hr/><br/><br/>
+   </p>
+   
+   
+   <p id="Cafe"><strong>Cafe</strong></p><hr/><br/>
+ <p class="part1">
+     <img src="../images/images.jpg" title="Starbucks" alt="Starbucks" height="190" width="200"/>
+    <h2>Starbucks</h2>
+    <a href="https://www.tripadvisor.ca/Restaurant_Review-g60763-d810190-Reviews-Starbucks-New_York_City_New_York.html#REVIEWS">Review</a>
+    <a href="https://www.tripadvisor.ca/Restaurant_Review-g60763-d810190-Reviews-Starbucks-New_York_City_New_York.html#MAPVIEW">Nearby</a><br/>
+	<br/>
+    <a href="tel:+1 212-869-0191"><img src="../images/tel.png" alt="call theme" title="call theme" height="40" width="40"/></a>|
+    <a href="https://www.google.com/maps/place/Starbucks/@40.7370473,-73.997306,15z/data=!3m1!5s0x89c259be3f3de9db:0x6240f16e13efc2f0!4m8!1m2!2m1!1sStarbucks,+New+York,+NY,+USA!3m4!1s0x89c25995fba09f8b:0x134605801ce5098f!8m2!3d40.7393594!4d-74.0025769"><img src="../images/location.png" alt="location " title="location " height="40" width="40"/></a>|
+    <a href="https://www.starbucks.com"><img src="../images/website.png" alt="website " title="website " height="40" width="40"/></a>|
+    <a href="https://www.starbucks.com/menu"><img src="../images/menu.png" alt="menu" title="menu" height="40" width="40"/></a>|
+         
+     
+	 <br/><br/>
+
+  <p>Our coffee masters have distilled their years of tasting knowledge down to three simple questions to help you find a Starbucks coffee <br/>
+   you’re sure to love.</p><br/>
+   
+  <p>
+   <img src="../images/Starbucks-Coffee-Portland.jpg" height="280" width="300"/></a>
+   <img src="../images/starbucks-in-nyc.jpg" height="280" width="300"/></a>
+   <img src="../images/images (1).jpg" height="280" width="300"/></a>
+  <br/><hr/><br/><br/>
+   </p>
+   
+   
+   <p class="part1">
+        <img src="../images/75d10025d288ce40290df498c214323e_featured_v2.jpg" title="Fluffy's Cafe & Pizzeria" alt="Fluffy's Cafe & Pizzeria" height="150" width="200"/>
+    <h2>Fluffy's Cafe & Pizzeria</h2>
+    <a href="https://www.tripadvisor.ca/Restaurant_Review-g60763-d10059872-Reviews-Fluffy_s_Cafe_Pizzeria-New_York_City_New_York.html#REVIEWS">Review</a>
+    <a href="https://www.tripadvisor.ca/Restaurant_Review-g60763-d10059872-Reviews-Fluffy_s_Cafe_Pizzeria-New_York_City_New_York.html#MAPVIEW">Nearby</a><br/>
+	<br/>
+    <a href="tel:+1 212-245-0440"><img src="../images/tel.png" alt="call theme" title="call theme" height="40" width="40"/></a>|
+    <a href="https://www.google.com/maps/place/Fluffy%E2%80%99s+Cafe+%26+Pizzeria/@40.7683537,-73.9829233,17z/data=!3m1!4b1!4m5!3m4!1s0x89c25858efed7ef9:0x47b5ace79b5e04bf!8m2!3d40.7683497!4d-73.985112"><img src="../images/location.png" alt="location " title="location " height="40" width="40"/></a>|
+    <a href="http://www.fluffyscafe.com"><img src="../images/website.png" alt="website " title="website " height="40" width="40"/></a>|
+    <a href="http://www.fluffyscafe.com/fluffyscafe_menu.html"><img src="../images/menu.png" alt="menu" title="menu" height="40" width="40"/></a>|
+    
+	 <br/><br/>
+
+  <p> Longtime casual spot for quick bites from pancakes to panini along with desserts & coffee.<br/></p><br/>
+   
+  <p>
+       <img src="../images/20161210-095841-largejpg.jpg" height="280" width="300"/></a>
+   <img src="../images/fluffy-s-cafe-pizzeria.jpg" height="280" width="300"/></a>
+   <img src="../images/caption.jpg" height="280" width="300"/></a>
+ </p> <br/><hr/><br/><br/>
+   </p>
+   
+   
+   
+   <p class="part1">
+    <img src="../images/IMG_1368.jpg" title="Tsion Cafe" alt="Cafe Sabarsky" height="190" width="200"/>
+    <h2>Cafe Sabarskye</h2>
+    <a href="https://www.tripadvisor.ca/Restaurant_Review-g60763-d816875-Reviews-Gemma-New_York_City_New_York.html">Review</a>
+    <a href="https://www.tripadvisor.ca/Restaurant_Review-g60763-d816875-Reviews-Gemma-New_York_City_New_York.html#MAPVIEW">Nearby</a><br/>
+	<br/>
+    <a href="tel:+1 212-288-0665"><img src="../images/tel.png" alt="call theme" title="call theme" height="40" width="40"/></a>|</td>
+    <a href="https://www.google.com/maps/place/Cafe+Sabarsky/@40.7812598,-73.9580819,17z/data=!3m1!4b1!4m5!3m4!1s0x89c25897f9fd5fd3:0x27020a995efb2bee!8m2!3d40.7812558!4d-73.9602706"><img src="../images/location.png" alt="location " title="location " height="40" width="40"/></a>|
+    <a href="https://www.kurtgutenbrunner.com/"><img src="../images/website.png" alt="website " title="website " height="40" width="40"/></a>|
+    <a href="https://www.kurtgutenbrunner.com/cafe-sabarsky-menu/"><img src="../images/menu.png" alt="menu" title="menu" height="40" width="40"/></a>|
+	 <br/><br/>
+
+<p>Café Sabarsky, which bears the name of Neue Galerie New York’s co-founder Serge Sabarsky, draws its inspiration from the great Viennese<br/>
+   cafés that served as important centers of intellectual and artistic life at the turn of the century.<br/>
+   </p><br/>
+   
+   <p>
+   <img src="../images/cafe_sabarsky_pastries.jpg" height="280" width="300"/></a>
+   <img src="../images/434494_hlZ0ftXP16UK6YbOX_FBFnioJPXL7bV3qb3CgDPQaz0.jpg" height="280" width="300"/></a>
+   <img src="../images/cafe-sabarsky.jpg" height="280" width="300"/></a>
+    </p> <br/><hr/><br/><br/>
+   </p>
+  
+
+  
+ <p id="Deserts & Bakery"><strong>Deserts & Bakery</strong></p><hr/><br/>
+ <p class="part1">
+   <img src="../images/ls (1).jpg" title="Two Little Red Hens" alt="Two Little Red Hens" height="150" width="200"/>
+    <h2>Two Little Red Hens</h2>
+    <a href="https://www.tripadvisor.ca/Restaurant_Review-g60763-d1862362-Reviews-Two_Little_Red_Hens-New_York_City_New_York.html#REVIEWS">Review</a>
+    <a href="https://www.tripadvisor.ca/Restaurant_Review-g60763-d1862362-Reviews-Two_Little_Red_Hens-New_York_City_New_York.html#MAPVIEW">Nearby</a><br/>
+	<br/>
+    <a href="tel:+1 212-452-0476"><img src="../images/tel.png" alt="call theme" title="call theme" height="40" width="40"/></a>|
+    <a href="https://www.google.com/maps/place/Two+Little+Red+Hens/@40.777528,-73.9495968,17z/data=!3m1!4b1!4m5!3m4!1s0x89c258bba154b013:0xb93e5531cfabc9cd!8m2!3d40.777528!4d-73.9517855"><img src="../images/location.png" alt="location " title="location " height="40" width="40"/></a>|
+    <a href="https://www.twolittleredhens.com/"><img src="../images/website.png" alt="website " title="website " height="40" width="40"/></a>|
+    <a href="https://www.twolittleredhens.com/TLRH_SpecialOrderMenu.pdf"><img src="../images/menu.png" alt="menu" title="menu" height="40" width="40"/></a>|
+     
+	 <br/><br/>
+
+  <p> Cozy, laid-back bake shop & cafe known for cupcakes in many flavors & custom cakes.<br/>
+  </p><br/>
+   
+  <p>
+       <img src="../images/ls.jpg" height="280" width="300"/></a>
+   <img src="../images/Two Little Ren Hens Bakery.jpg" height="280" width="300"/></a>
+   <img src="../images/photo_1.jpg" height="280" width="300"height="280" width="300"/></a>
+  <br/><hr/><br/><br/>
+   </p>
+   
+   
+   <p class="part1">
+    <img src="../images/f0e09438c35662d4e24e2b3691bb3cb9.jpg" title="Levain Bakery" alt="Levain Bakery" height="150" width="200"/>
+    <h2>Levain Bakery</h2>
+    <a href="https://www.tripadvisor.ca/Restaurant_Review-g60763-d4522276-Reviews-Levain_Bakery-New_York_City_New_York.html#REVIEWS">Review</a>
+    <a href="https://www.tripadvisor.ca/Restaurant_Review-g60763-d4522276-Reviews-Levain_Bakery-New_York_City_New_York.html#MAPVIEW">Nearby</a><br/>
+	<br/>
+    <a href="tel:+1 646-455-0952"><img src="../images/tel.png" alt="call theme" title="call theme" height="40" width="40"/></a>|
+    <a href="https://www.google.com/maps/search/Levain+Bakery,+New+York,+NY,+USA/@40.7775632,-73.9342758,14z/data=!3m1!4b1"><img src="../images/location.png" alt="location " title="location " height="40" width="40"/></a>|
+    <a href="https://www.levainbakery.com"><img src="../images/website.png" alt="website " title="website " height="40" width="40"/></a>|
+    <a href="https://www.levainbakery.com/online-ordering#"><img src="../images/menu.png" alt="menu" title="menu" height="40" width="40"/></a>|
+    
+	<br/><br/>
+   <p>Baked to order, in small batches, packaged by hand and delivered fresh to your door.<br/>
+   </p><br/>
+   <p>
+   <img src="../images/IMG_0594.jpg" height="280" width="300"/></a>
+   <img src="../images/levain-bakery.jpg" height="280" width="300"/></a>
+   <img src="../images/LevainBakeryChocolateChipCookieRecipe16ed.jpg" height="280" width="300"/></a>
+  </p> <br/><hr/><br/><br/>
+   </p>
+   
+   
+   <p class="part1">
+    <img src="../images/box.jpg" title="Molly's Cupcakes" alt="Molly's Cupcakes" height="200" width="200"/>
+    <h2>Molly's Cupcakes</h2>
+    <a href="https://www.tripadvisor.ca/Restaurant_Review-g60763-d2321555-Reviews-Molly_s_Cupcakes-New_York_City_New_York.html#REVIEWS">Review</a>
+    <a href="https://www.tripadvisor.ca/Restaurant_Review-g60763-d2321555-Reviews-Molly_s_Cupcakes-New_York_City_New_York.html#MAPVIEW">Nearby</a><br/>
+	<br/>
+    <a href="tel:+1 212-414-2253"><img src="../images/tel.png" alt="call theme" title="call theme" height="40" width="40"/></a>|
+    <a href="https://www.google.com/maps/place/Molly's+Cupcakes/@40.7301085,-74.0003483,17z/data=!3m1!4b1!4m5!3m4!1s0x89c2599248a62973:0xb0d07f60cd1500d9!8m2!3d40.7301085!4d-74.002537"><img src="../images/location.png" alt="location " title="location " height="40" width="40"/></a>|
+    <a href="http://www.mollyscupcakes.com"><img src="../images/website.png" alt="website " title="website " height="40" width="40"/></a>|
+    <a href="http://www.mollyscupcakes.com/ny/pdf/NewYork_Menu_0817.pdf"><img src="../images/menu.png" alt="menu" title="menu" height="40" width="40"/></a>|
+    
+	<br/><br/>
+   <p>Miss Molly: Molly was my third-grade teacher. Whenever one of us had a birthday, she would bake us cupcakes. I still remember how good they<br/>
+    were. She had her own special recipe for chocolate and vanilla. Just about everyone who tries them thinks they're the best cupcakes ever.<br/>
+    Our Mission: In honor of Molly and as a way to help our children, a portion of our profits is donated directly to schools in our community.<br/>
+    Every time you eat a cupcake or sip a latte, you help our kids. So
+    eat up!
+   </p><br/>
+   <p>
+   <img src="../images/chicago-skyline-engagement_123.jpg" height="280" width="300"/></a>
+   <img src="../images/mollys-1.jpg" height="280" width="300"/></a>
+   <img src="../images/IMG_0671-500x375.jpg" height="280" width="300"/></a>
+  </p> <br/><hr/><br/><br/>
+   </p>
+  
+  
+</div>
+
+<footer>
+
+<a href="#"><img src="../images/twitter.png" width="30" height="30"/></a>
+<a href="#"><img src="../images/insta.png" width="30" height="30"/></a>
+<a href="#"><img src="../images/whatsapp.png" width="30" height="30"/></a>
+<a href="#"><img src="../images/youtube.png" width="30" height="30"/></a>
+<a id ="up_header" href="#"><img src="../images/up.png"  width="30" height="30"/></a>
+</footer>
+</body>
+</html>
